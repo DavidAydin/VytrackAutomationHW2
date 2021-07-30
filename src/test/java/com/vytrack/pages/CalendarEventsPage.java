@@ -8,8 +8,8 @@ public class CalendarEventsPage extends BasePage{
     @FindBy(xpath="//div[@class='btn btn-link dropdown-toggle']")
     public WebElement pageSubtitle;
     
-    public void getSubtitleText(){
-    
+    public String getSubtitleText(){
+        return pageSubtitle.getText();
     }
-
+    
 }
